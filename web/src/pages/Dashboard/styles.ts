@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const NotificationsArea = styled.div`
@@ -36,6 +39,12 @@ export const NotificationsArea = styled.div`
       font-size: 16px;
     }
   }
+
+  width: 100%;
+
+  @media (min-width: 900px) {
+    max-width: 900px;
+  }
 `;
 
 export const Appointment = styled.div`
@@ -61,11 +70,25 @@ export const Appointment = styled.div`
   &:hover {
     transform: translateX(10px);
   }
+
+  .confirmed {
+    color: #00aa00 !important;
+  }
+
+  .notconfirmed {
+    color: #ffdd00 !important;
+  }
+
+  .canceled {
+    color: #e11010 !important;
+  }
 `;
+
 export const AppointmentDate = styled.div`
   color: #ec135a;
   font-weight: 600;
 `;
+
 export const AppointmentsList = styled.div`
   margin-top: 20px;
   background-color: transparent;
@@ -90,15 +113,26 @@ export const AppointmentsList = styled.div`
       font-weight: 500;
     }
   }
+
+  width: 100%;
+
+  @media (min-width: 900px) {
+    max-width: 900px;
+  }
 `;
+
 export const AppointmentTitle = styled.div`
   font-weight: 600;
   color: #000;
 `;
+
 export const AppointmentStatus = styled.div`
-  color: #00aa00;
+  color: 0;
   font-weight: 600;
   font-size: 14px;
   display: flex;
   align-items: center;
+  svg {
+    margin-right: 5px;
+  }
 `;

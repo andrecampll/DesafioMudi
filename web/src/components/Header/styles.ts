@@ -7,9 +7,17 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: 900px) {
+    align-items: center;
+    padding: 10px 50px;
+  }
+
   h1 {
     font-weight: 600;
     margin-left: 60px;
+    @media (min-width: 900px) {
+      margin-left: 0;
+    }
   }
 
   #check {
@@ -21,6 +29,9 @@ export const Container = styled.div`
     padding: 7px;
     position: absolute;
     z-index: 1;
+    @media (min-width: 900px) {
+      visibility: hidden;
+    }
   }
 
   .bar {
@@ -30,6 +41,9 @@ export const Container = styled.div`
     position: absolute;
     transition: all 0.2s linear;
     left: -300px;
+    @media (min-width: 900px) {
+      visibility: hidden;
+    }
   }
 
   .link {
@@ -69,6 +83,26 @@ export const Container = styled.div`
         font-size: 16px;
         font-weight: 600;
       }
+    }
+  }
+
+  aside {
+    display: flex;
+    a {
+      color: #ec135a !important;
+      text-decoration: none;
+      margin-right: 10px;
+      transition: opacity 0.4s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    visibility: hidden;
+
+    @media (min-width: 900px) {
+      visibility: visible;
     }
   }
 `;

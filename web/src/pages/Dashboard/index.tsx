@@ -1,5 +1,10 @@
 import React from 'react';
-import { FiArrowRight, FiCheck } from 'react-icons/fi';
+import {
+  FiArrowRight,
+  FiCheckCircle,
+  FiAlertCircle,
+  FiSlash,
+} from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/favicon.png';
 
@@ -40,13 +45,15 @@ const Dashboard: React.FC = () => {
             <AppointmentTitle>Agenda - Anderson Silva </AppointmentTitle>
 
             <AppointmentDate>08:00 - 08:30</AppointmentDate>
-            <AppointmentStatus>
-              <FiCheck size={20} />
+            <AppointmentStatus className="confirmed">
+              <FiCheckCircle size={20} />
               Confirmado
             </AppointmentStatus>
           </Link>
           <aside>
-            <FiArrowRight size={20} color="#ec135a" />
+            <Link to="detail">
+              <FiArrowRight size={20} color="#ec135a" />
+            </Link>
           </aside>
         </Appointment>
 
@@ -55,13 +62,15 @@ const Dashboard: React.FC = () => {
             <AppointmentTitle>Agenda - Ronaldinho </AppointmentTitle>
 
             <AppointmentDate>11:00 - 11:30</AppointmentDate>
-            <AppointmentStatus>
-              <FiCheck size={20} />
-              Confirmado
+            <AppointmentStatus className="notconfirmed">
+              <FiAlertCircle size={20} color="#ffff00" />
+              Não Confirmado
             </AppointmentStatus>
           </Link>
           <aside>
-            <FiArrowRight size={20} color="#ec135a" />
+            <Link to="detail">
+              <FiArrowRight size={20} color="#ec135a" />
+            </Link>
           </aside>
         </Appointment>
 
@@ -70,13 +79,15 @@ const Dashboard: React.FC = () => {
             <AppointmentTitle>Agenda - Michael Jordan </AppointmentTitle>
 
             <AppointmentDate>14:00 - 14:30</AppointmentDate>
-            <AppointmentStatus>
-              <FiCheck size={20} />
-              Confirmado
+            <AppointmentStatus className="canceled">
+              <FiSlash size={20} color="#e11010" />
+              Cancelado
             </AppointmentStatus>
           </Link>
           <aside>
-            <FiArrowRight size={20} color="#ec135a" />
+            <Link to="detail">
+              <FiArrowRight size={20} color="#ec135a" />
+            </Link>
           </aside>
         </Appointment>
       </AppointmentsList>

@@ -2,12 +2,21 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const NotificationsArea = styled.div`
   margin-top: 10px;
   background-color: #fff;
   border-radius: 6px;
+  width: 100%;
+
+  @media (min-width: 900px) {
+    max-width: 900px;
+  }
+
   header {
     background-color: #ec135a;
     padding: 15px;
@@ -40,7 +49,6 @@ export const NotificationsArea = styled.div`
 
 export const Appointment = styled.div`
   padding: 15px;
-  border-bottom: solid 1px #ccc;
   cursor: pointer;
   transition: opacity 0.4s;
   display: flex;
@@ -61,8 +69,14 @@ export const AppointmentDate = styled.div`
   font-weight: 600;
 `;
 export const AppointmentsList = styled.div`
-  border-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   background-color: #fff;
+  width: 100%;
+
+  @media (min-width: 900px) {
+    max-width: 900px;
+  }
   header {
     display: flex;
     align-items: center;
