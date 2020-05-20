@@ -9,8 +9,8 @@ import GlobalStyle from './styles/global';
 const App: React.FC = () => (
   <>
     <GlobalStyle />
-    <Header />
     <Router>
+      <Header />
       <Routes />
     </Router>
   </>

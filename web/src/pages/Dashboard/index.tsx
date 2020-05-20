@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiArrowRight, FiCheck } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/favicon.png';
 
 import {
@@ -35,7 +36,7 @@ const Dashboard: React.FC = () => {
         </header>
 
         <Appointment>
-          <div>
+          <Link to="detail">
             <AppointmentTitle>Agenda - Anderson Silva </AppointmentTitle>
 
             <AppointmentDate>08:00 - 08:30</AppointmentDate>
@@ -43,14 +44,14 @@ const Dashboard: React.FC = () => {
               <FiCheck size={20} />
               Confirmado
             </AppointmentStatus>
-          </div>
+          </Link>
           <aside>
             <FiArrowRight size={20} color="#ec135a" />
           </aside>
         </Appointment>
 
         <Appointment>
-          <div>
+          <Link to="detail">
             <AppointmentTitle>Agenda - Ronaldinho </AppointmentTitle>
 
             <AppointmentDate>11:00 - 11:30</AppointmentDate>
@@ -58,14 +59,14 @@ const Dashboard: React.FC = () => {
               <FiCheck size={20} />
               Confirmado
             </AppointmentStatus>
-          </div>
+          </Link>
           <aside>
             <FiArrowRight size={20} color="#ec135a" />
           </aside>
         </Appointment>
 
         <Appointment>
-          <div>
+          <Link to="detail">
             <AppointmentTitle>Agenda - Michael Jordan </AppointmentTitle>
 
             <AppointmentDate>14:00 - 14:30</AppointmentDate>
@@ -73,7 +74,7 @@ const Dashboard: React.FC = () => {
               <FiCheck size={20} />
               Confirmado
             </AppointmentStatus>
-          </div>
+          </Link>
           <aside>
             <FiArrowRight size={20} color="#ec135a" />
           </aside>

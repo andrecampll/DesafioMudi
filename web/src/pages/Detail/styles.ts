@@ -41,16 +41,10 @@ export const NotificationsArea = styled.div`
 export const Appointment = styled.div`
   padding: 15px;
   border-bottom: solid 1px #ccc;
-  background-color: #fff;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: opacity 0.4s;
   display: flex;
   justify-content: space-between;
-
-  a {
-    text-decoration: none;
-    color: auto;
-  }
 
   aside {
     display: flex;
@@ -59,7 +53,7 @@ export const Appointment = styled.div`
   }
 
   &:hover {
-    transform: translateX(10px);
+    opacity: 0.7;
   }
 `;
 export const AppointmentDate = styled.div`
@@ -67,16 +61,13 @@ export const AppointmentDate = styled.div`
   font-weight: 600;
 `;
 export const AppointmentsList = styled.div`
-  margin-top: 20px;
-  background-color: transparent;
+  border-radius: 6px;
+  background-color: #fff;
   header {
     display: flex;
     align-items: center;
     padding: 15px;
     justify-content: space-between;
-    background-color: #fff;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
 
     div {
       background-color: #ec135a;
@@ -93,7 +84,6 @@ export const AppointmentsList = styled.div`
 `;
 export const AppointmentTitle = styled.div`
   font-weight: 600;
-  color: #000;
 `;
 export const AppointmentStatus = styled.div`
   color: #00aa00;
