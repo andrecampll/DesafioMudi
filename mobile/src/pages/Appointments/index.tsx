@@ -3,8 +3,8 @@ import { Text } from 'react-native';
 
 // import { Container } from './styles';
 
-const Detail: React.FC = () => {
-  return <Text>Detail</Text>;
+const Appointments: React.FC = () => {
+  return <Text>Appointments</Text>;
 };
 
-export default Detail;
+export default Appointments;

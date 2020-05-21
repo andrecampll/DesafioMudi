@@ -1,45 +1,29 @@
 import React from 'react';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
 
-import Icon from 'react-native-vector-icons/MaterialIcons';
-import Feather from 'react-native-vector-icons/Feather';
+import Details from './pages/Details';
 
-import Dashboard from './pages/Dashboard';
-import Detail from './pages/Detail';
+import Routes from './RouteTabs';
 
-interface Props {
-  toggleTheme(): void;
-}
+const Stack = createStackNavigator();
 
-const Tab = createMaterialBottomTabNavigator();
-
-const Routes: React.FC = () => {
+const Nav: React.FC = () => {
   return (
-    <Tab.Navigator
-      activeColor="#fff"
-      inactiveColor="#000"
-      barStyle={{ backgroundColor: '#ec135a' }}
-    >
-      <Tab.Screen
-        name="Listagem"
-        component={Dashboard}
-        options={{
-          tabBarIcon: (props: { focused: false; color: '#fff' }) => (
-            <Icon name="format-list-bulleted" size={20} color={props.color} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Opções"
-        component={Detail}
-        options={{
-          tabBarIcon: (props: { focused: true; color: '#fff' }) => (
-            <Feather name="settings" size={20} color={props.color} />
-          ),
-        }}
-      />
-    </Tab.Navigator>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Routes"
+          component={Routes}
+          options={{
+            headerShown: false,
+            headerTransparent: true,
+          }}
+        />
+        <Stack.Screen name="Detalhes" component={Details} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
-export default Routes;
+export default Nav;
