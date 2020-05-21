@@ -22,6 +22,7 @@ export const DoctorName = styled.Text`
   font-family: 'Poppins-Regular';
   font-size: 20px;
   font-weight: bold;
+  color: #555;
 `;
 
 export const DoctorAvatar = styled.Image`
@@ -42,6 +43,7 @@ export const InfoContainer = styled.View`
 export const TextContent = styled.Text`
   font-family: 'Poppins-Regular';
   margin-bottom: 10px;
+  color: #222;
 `;
 
 export const RowContainer = styled.View`

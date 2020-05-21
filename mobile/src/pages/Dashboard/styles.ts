@@ -25,12 +25,14 @@ export const LogoText = styled.Text`
   font-family: 'Poppins-Regular';
   font-weight: bold;
   margin-left: 5px;
+  color: #111;
 `;
 
 export const WelcomeText = styled.Text`
   font-family: 'Poppins-Regular';
   font-size: 25px;
   margin-top: 10px;
+  color: #111;
 `;
 
 export const InviteText = styled.Text`
@@ -75,6 +77,7 @@ export const DoctorName = styled.Text`
   font-family: 'Poppins-Regular';
   font-size: 16px;
   font-weight: bold;
+  color: #555;
 `;
 export const DoctorsList = styled(FlatList)`
   margin-top: 10px;

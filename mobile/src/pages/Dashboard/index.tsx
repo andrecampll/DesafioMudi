@@ -34,6 +34,7 @@ interface Doctor {
   name: string;
   avatar: ImageSourcePropType;
   CRM: string;
+  experience: string;
 }
 
 const Dashboard: React.FC = () => {
@@ -50,26 +51,31 @@ const Dashboard: React.FC = () => {
       name: 'Dra. Sofia',
       avatar: medica,
       CRM: ' 123123',
+      experience: 'Cardiologista',
     },
     {
       name: 'Dr. Carlos',
       avatar: medico,
       CRM: ' 123123',
+      experience: 'Oncologista',
     },
     {
       name: 'Dra. Bárbara',
       avatar: medica,
       CRM: ' 123123',
+      experience: 'Pediatra',
     },
     {
       name: 'Dr. Cláudio',
       avatar: medico,
       CRM: ' 123123',
+      experience: 'Ortopedista',
     },
     {
       name: 'Dra. Maria',
       avatar: medica,
       CRM: ' 123123',
+      experience: 'Neurologista',
     },
   ]);
 
@@ -114,7 +120,7 @@ const Dashboard: React.FC = () => {
                 </DoctorCRM>
                 <RowContainer>
                   <Icon size={20} color="#ec135a" name="heart" />
-                  <TextContainer>Cardiologista</TextContainer>
+                  <TextContainer>{item.experience}</TextContainer>
                 </RowContainer>
               </InfoContainer>
               <Icon size={20} name="chevron-right" color="#ec135a" />

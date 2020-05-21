@@ -25,12 +25,14 @@ export const LogoText = styled.Text`
   font-size: 40px;
   font-family: 'Poppins-Regular';
   font-weight: bold;
+  color: #111;
 `;
 
 export const WelcomeText = styled.Text`
   font-family: 'Poppins-Regular';
   font-size: 25px;
   margin-top: 5px;
+  color: #111;
 `;
 
 export const InviteText = styled.Text`
