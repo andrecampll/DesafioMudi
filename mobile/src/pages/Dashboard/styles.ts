@@ -88,6 +88,7 @@ export const DoctorAvatar = styled.Image`
 `;
 export const DoctorCRM = styled.Text`
   font-family: 'Poppins-Regular';
+  color: #aaa;
 `;
 
 export const InfoContainer = styled.View`

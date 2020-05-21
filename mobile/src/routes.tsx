@@ -20,7 +20,14 @@ const Nav: React.FC = () => {
             headerTransparent: true,
           }}
         />
-        <Stack.Screen name="Detalhes" component={Details} />
+        <Stack.Screen
+          name="Detalhes"
+          component={Details}
+          options={{
+            headerStyle: { backgroundColor: '#ec135a' },
+            headerTintColor: '#fff',
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
