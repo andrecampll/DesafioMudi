@@ -74,12 +74,14 @@ export const ActionButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
 `;
+
 export const ActionButtonText = styled.Text`
   color: #fff;
   font-weight: bold;
   font-family: 'Poppins-Regular';
   font-size: 17px;
 `;
+
 export const ActionArea = styled.View`
   flex-direction: row;
   justify-content: space-between;

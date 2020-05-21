@@ -34,7 +34,7 @@ const RouteTabs: React.FC = () => {
         component={Appointments}
         options={{
           tabBarIcon: (props: { color: '#fff' }) => (
-            <Feather name="settings" size={20} color={props.color} />
+            <Feather name="bookmark" size={20} color={props.color} />
           ),
         }}
       />

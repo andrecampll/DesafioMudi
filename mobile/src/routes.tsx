@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Details from './pages/Details';
 
-import Routes from './RouteTabs';
+import Tabs from './tabs.routes';
 
 const Stack = createStackNavigator();
 
@@ -14,7 +14,7 @@ const Nav: React.FC = () => {
       <Stack.Navigator>
         <Stack.Screen
           name="Routes"
-          component={Routes}
+          component={Tabs}
           options={{
             headerShown: false,
             headerTransparent: true,

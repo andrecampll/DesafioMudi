@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Icon from 'react-native-vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native';
 
-import { Text, Image, ImageSourcePropType } from 'react-native';
+import { ImageSourcePropType } from 'react-native';
 
 import logo from '../../assets/logo.png';
 import medico from '../../assets/medico.png';
@@ -26,6 +26,8 @@ import {
   DoctorAvatar,
   DoctorCRM,
   InfoContainer,
+  RowContainer,
+  TextContainer,
 } from './styles';
 
 interface Doctor {
@@ -110,6 +112,10 @@ const Dashboard: React.FC = () => {
                   CRM:
                   {item.CRM}
                 </DoctorCRM>
+                <RowContainer>
+                  <Icon size={20} color="#ec135a" name="heart" />
+                  <TextContainer>Cardiologista</TextContainer>
+                </RowContainer>
               </InfoContainer>
               <Icon size={20} name="chevron-right" color="#ec135a" />
             </DoctorContainer>

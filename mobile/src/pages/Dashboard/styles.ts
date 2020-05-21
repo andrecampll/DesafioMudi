@@ -78,6 +78,7 @@ export const DoctorName = styled.Text`
 `;
 export const DoctorsList = styled(FlatList)`
   margin-top: 10px;
+  height: 320px;
 `;
 
 export const DoctorAvatar = styled.Image`
@@ -93,4 +94,13 @@ export const DoctorCRM = styled.Text`
 
 export const InfoContainer = styled.View`
   flex: 1;
+`;
+
+export const RowContainer = styled.View`
+  flex-direction: row;
+`;
+export const TextContainer = styled.Text`
+  color: #ec135a;
+  font-family: 'Poppins-Regular';
+  margin-left: 5px;
 `;

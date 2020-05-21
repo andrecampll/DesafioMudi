@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Icon from 'react-native-vector-icons/Feather';
 
+import { Alert } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import medica from '../../assets/medica.jpg';
 
 import {
@@ -24,6 +26,16 @@ import {
 
 const Detail: React.FC = () => {
   const [selected, setSelected] = useState(false);
+  const navigation = useNavigation();
+
+  const handleAppointment = useCallback(() => {
+    Alert.alert(
+      'Agendamento feito com sucesso!',
+      'Agora, você precisa confirmar a sua presença na área de Agendamentos.',
+    );
+
+    navigation.navigate('Agendamentos');
+  }, [navigation]);
 
   return (
     <Container>
@@ -57,7 +69,7 @@ const Detail: React.FC = () => {
 
         <RowContainer>
           <Icon size={20} color="#ec135a" name="watch" />
-          <TextContainer>Horários disponíveis</TextContainer>
+          <TextContainer>Escolha um horário</TextContainer>
         </RowContainer>
 
         <ScheduleContainer>
@@ -80,7 +92,7 @@ const Detail: React.FC = () => {
       </DoctorContainer>
 
       <ActionArea>
-        <ActionButton>
+        <ActionButton onPress={() => handleAppointment()}>
           <ActionButtonText>Agendar</ActionButtonText>
         </ActionButton>
 
