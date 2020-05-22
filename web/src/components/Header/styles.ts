@@ -89,13 +89,13 @@ export const Container = styled.div`
   aside {
     display: flex;
     a {
-      color: #ec135a !important;
+      color: #111;
       text-decoration: none;
       margin-right: 10px;
-      transition: opacity 0.4s;
+      transition: color 0.4s;
 
       &:hover {
-        opacity: 0.6;
+        color: #ec135a;
       }
     }
 
