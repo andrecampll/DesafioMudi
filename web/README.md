@@ -41,6 +41,10 @@ Exemplo:
             ├── index.tsx        
             └── styles.ts
 
+# Testes 🧪
+Todos os testes dessa aplicação foram desenvolvidos com Jest e utilizam dados fakes. <br />
+Para rodar todos os testes use <code> yarn test </code>.
+
 # Como obter esse repositório? 🤔
 - Frontend:
   1. Clone esse repositório utilizando <code>git clone</code>.
