@@ -20,6 +20,11 @@ React Icons ⚛️❤️ <br />
 Polished 🌈 <br />
 Entre outras...
 
+# Resultado 🚀
+<p align="center">
+  <img src="mudi.gif"/>
+</p>
+
 # Estrutura de Pastas 🗃️
 
     ├── src                # Arquivos principais
@@ -36,7 +41,7 @@ Exemplo:
             ├── index.tsx        
             └── styles.ts
 
-# Como obter esse repositório 🤔
+# Como obter esse repositório? 🤔
 - Frontend:
   1. Clone esse repositório utilizando <code>git clone</code>.
   2. Navegue até a pasta 'web'.
