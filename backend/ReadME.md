@@ -63,6 +63,10 @@ referentes ao módulo em questão.
 <code>get/providers</code>: Lista todos os médicos cadastrados. Não necessita de corpo na requisiçaõ. Rota autenticada pelo token; <br /><br />
 <code>get/profile</code>: Lista todos os dados do usuário cadastrado. Não necessita de corpo na requisiçaõ. Rota autenticada pelo token; <br />
 
+# Testes 🧪
+Todos os testes dessa aplicação foram desenvolvidos com Jest e utilizam dados fakes. <br />
+Para rodar todos os testes use <code> yarn test </code>.
+
 # Como obter esse repositório 🤔
 - Backend:
   1. Clone esse repositório utilizando <code>git clone</code>.
