@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.png"/>
+  <img src="../logo.png"/>
 </p>
 
 # Mudi Saúde 🩺
@@ -12,6 +12,11 @@ Esse projeto Mobile consiste no app voltado para o paciente, o qual terá acesso
 todos disponíveis para agendar uma consulta, de acordo com data e hora.
 <br />
 <code>Obs: como foi solicitado, todos os dados estão estáticos, sem nenhuma integração com o backend.</code> <br />
+
+# Resultado 🚀
+<p align="center">
+  <img src="mudimobile.gif"/>
+</p>
 
 # Tecnologias Utilizadas 🚀
 Typescript 🦕 </br>
@@ -29,7 +34,8 @@ Entre outras...
         ├── assets         # Arquivos de mídia (fotos)
         ├── components     # Componentes Isolados
         ├── pages          # Páginas da aplicação
-        └── routes         # Rotas construídas com react router dom
+        ├── App.tsx        # Arquivo principal do app
+        └── routes.tsx     # Rotas construídas com React Navigation
 Todo componente (indicado por uma pasta) está dividido em <code>index.tsx</code> e <code>styles.ts</code>, isolando lógica e estrutura, e
 estilização, respectivamente. <br />
 Exemplo:
