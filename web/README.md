@@ -1,44 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="../logo.png"/>
+</p>
 
-## Available Scripts
+# Mudi Saúde 🩺
+Esta pasta é referente ao Frontend Web do desafio proposto no processo de seleção da empresa Mudi.
 
-In the project directory, you can run:
+# Proposta 🔥
+Este projeto é uma intervenção tecnológica na área da saúde, permitindo que pacientes se conectem de forma mais eficiente com
+os médicos, a fim de agilizar o sistema de saúde Brasileiro na medida do possível.<br />
+Esse Frontend Web consiste na agenda virtual do médico, a qual fornecerá dados sobre os agendamentos, tais como nome do paciente e horário da consulta. <br />
+<code>Obs: como foi solicitado, todos os dados estão estáticos, sem nenhuma integração com o backend.</code> <br />
+Live demo: https://frontendteste.herokuapp.com/ (O carregamento pode demorar um pouco)
 
-### `yarn start`
+# Tecnologias Utilizadas 🚀
+Typescript 🦕 </br>
+React ⚛️ <br />
+Styled-Components 💅 <br />
+React Icons ⚛️❤️ <br />
+Polished 🌈 <br />
+Entre outras...
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Estrutura de Pastas 🗃️
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+    ├── src                # Arquivos principais
+        ├── assets         # Arquivos de mídia (fotos)
+        ├── components     # Componentes Isolados
+        ├── pages          # Páginas da aplicação
+        ├── styles         # Estilos globais
+        └── routes         # Rotas construídas com react router dom
+Todo componente (indicado por uma pasta) está dividido em <code>index.tsx</code> e <code>styles.ts</code>, isolando lógica e estrutura, e
+estilização, respectivamente. <br />
+Exemplo:
 
-### `yarn test`
+        ├── "componente"
+            ├── index.tsx        
+            └── styles.ts
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Como obter esse repositório 🤔
+- Frontend:
+  1. Clone esse repositório utilizando <code>git clone</code>.
+  2. Navegue até a pasta 'web'.
+  3. Rode o comando <code> yarn </code> na raíz da pasta para baixar as dependências.
+  4. Rode o comando <code> yarn start</code> para inicializar a aplicação em <code>localhost:3000</code>.
+  5. Happy Hacking! 🚀
 
-### `yarn build`
+# Como Contribuir? 😍
+**Faça um fork deste repositório**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone o seu fork
+$ git clone url-do-seu-fork && cd DesafioMudi
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Crie uma branch com sua feature ou correção de bugs
+$ git checkout -b minha-branch
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Faça o commit das suas alterações
+$ git commit -m 'minhas alterações'
 
-### `yarn eject`
+# Faça o push para a sua branch
+$ git push origin minha-branch
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Delete sua branch, se quiser, quando o merge da sua pull request for feito. <br />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito com 💜 por <a href="https://www.linkedin.com/in/andrecampll/" target="blank">andrecampll</a>.
